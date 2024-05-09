@@ -42,38 +42,44 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            textBox1.Location = new Point(56, 41);
+            textBox1.Location = new Point(64, 55);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 32);
+            textBox1.Size = new Size(114, 39);
             textBox1.TabIndex = 0;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            button1.Location = new Point(56, 89);
+            button1.Location = new Point(64, 119);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(100, 32);
+            button1.Size = new Size(114, 43);
             button1.TabIndex = 1;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            button2.Location = new Point(56, 137);
+            button2.Location = new Point(64, 183);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(100, 32);
+            button2.Size = new Size(114, 43);
             button2.TabIndex = 1;
             button2.Text = "Reset";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox2
             // 
             textBox2.Enabled = false;
             textBox2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            textBox2.Location = new Point(278, 41);
+            textBox2.Location = new Point(338, 58);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(72, 32);
+            textBox2.Size = new Size(82, 39);
             textBox2.TabIndex = 0;
             textBox2.Text = "0";
             // 
@@ -81,9 +87,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label1.Location = new Point(197, 46);
+            label1.Location = new Point(225, 61);
             label1.Name = "label1";
-            label1.Size = new Size(52, 25);
+            label1.Size = new Size(64, 32);
             label1.TabIndex = 2;
             label1.Text = "Sum";
             // 
@@ -91,9 +97,10 @@
             // 
             textBox3.Enabled = false;
             textBox3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            textBox3.Location = new Point(278, 89);
+            textBox3.Location = new Point(338, 119);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(72, 32);
+            textBox3.Size = new Size(82, 39);
             textBox3.TabIndex = 0;
             textBox3.Text = "0";
             // 
@@ -101,9 +108,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label2.Location = new Point(197, 94);
+            label2.Location = new Point(225, 125);
             label2.Name = "label2";
-            label2.Size = new Size(67, 25);
+            label2.Size = new Size(83, 32);
             label2.TabIndex = 2;
             label2.Text = "Count";
             // 
@@ -111,26 +118,27 @@
             // 
             textBox4.Enabled = false;
             textBox4.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            textBox4.Location = new Point(278, 137);
+            textBox4.Location = new Point(338, 186);
+            textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(72, 32);
+            textBox4.Size = new Size(82, 39);
             textBox4.TabIndex = 0;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label3.Location = new Point(197, 142);
+            label3.Location = new Point(225, 189);
             label3.Name = "label3";
-            label3.Size = new Size(85, 25);
+            label3.Size = new Size(107, 32);
             label3.TabIndex = 2;
             label3.Text = "Average";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(415, 221);
+            ClientSize = new Size(474, 295);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -140,6 +148,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
